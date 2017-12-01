@@ -15,5 +15,13 @@ function r(t = 5) {
         } else {
             magik.dixit('No more shield DUDE...');
         }
+    } 
+}
+
+function toss(entity) {
+    if (entity.getName() == magik.getSender().getName()) {
+        return;
     }
+    var vector = Jave.type('org.bukkit.util.Vector');
+    entity.setVelocity(new Vector(2,2,2));
 }
