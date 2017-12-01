@@ -9,6 +9,11 @@ function r(t = 5) {
         n--;
         const location = magik.hic();
         const nearbyEntities = location.getWorld().getNearbyEntities(location, 8, 8, 8);
-        nearbyEntities.forEac
+        nearbyEntities.forEach(entity => toss(entity));
+        if(n>0) {
+            magik.setTimeout(shield, 300);
+        } else {
+            magik.dixit('No more shield DUDE...');
+        }
     }
 }
