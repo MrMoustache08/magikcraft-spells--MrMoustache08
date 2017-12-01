@@ -22,6 +22,6 @@ function toss(entity) {
     if (entity.getName() == magik.getSender().getName()) {
         return;
     }
-    var vector = Java.type('org.bukkit.util.Vector');
+    var Vector = Java.type('org.bukkit.util.Vector');
     entity.setVelocity(new Vector(2,2,2));
 }
