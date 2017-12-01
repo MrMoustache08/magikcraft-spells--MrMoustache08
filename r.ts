@@ -8,7 +8,7 @@ function r(t = 5) {
     function shield() {
         n--;
         const location = magik.hic();
-        const nearbyEntities = location.getWorld().getNearbyEntities(location, 8, 8, 8);
+        const nearbyEntities = location.getWorld().getNearbyEntities(location,8,8,8);
         nearbyEntities.forEach(entity => toss(entity));
         if(n>0) {
             magik.setTimeout(shield, 300);
