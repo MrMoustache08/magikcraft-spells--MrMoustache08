@@ -20,6 +20,10 @@ function write(char="a") {
     
     }
     const a = binary(font[char]);
+    const here = magik.hic();
+    const x = here.getX() +1;
+    const y = here.getY() +1
+    const z = here.getZ() +1
    //a.forEach(line=>magik.dixit(line.padStart(8,"0")));
 }
 
