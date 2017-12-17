@@ -14,4 +14,12 @@ function write() {
         h:[102,102,102,126,102,102,102,102],
         i:[255,126,24,24,24,24,126,255] 
     }	
+
+    function binary(letter) {
+        return letter.map(line=>line.toString(2));
+    
+    }
+    const a = binary(font.a);
+    a.forEach(line=>magik.dixit(line));
+
 }
